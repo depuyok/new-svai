@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='./main.css'>
+</head>
+<body>
+<section>
+	<form>
+		<div class="main-wrapper">
+		<h1>Подсчитай стоимость услуги</h1>
+				<div class="inputs-block">
+
+						<div class="inputs-block-column">
+						<h6><b>Введите данные</b> (основной фундамент)</h6>
+							<div class="inputs-wrapper">
+								<input 
+										type="number"
+										placeholder="Сваи Оголовки ЦПС"
+										id="income-soc"
+										class="input"
+								>
+								<input 
+										type="number"
+										placeholder="Швеллер"
+										id="income-schweller"
+										class="input"
+								> 
+								<input
+										type="number"
+										placeholder="Уголок или профтруба"
+										id="income-diagonalstrebe"
+										class="input"
+								>
+							</div>
+
+						</div>
+
+					<div class="radio-vibor">
+					<!--<h6>Введите данные</h6>-->
+							<table>
+								<tr>
+									<td><sub style="font-size: 22px; font-weight: normal;">ø</sub>\<sup style="font-size: 15px; font-weight: normal;">M</sup></td>
+									<th>1.5</th>
+									<th>2</th>
+									<th>2.5</th>
+									<th>3</th>
+								</tr>
+								<tr>
+									<th>57</th>
+									<td><input type="radio" id="diametr57_1.5" name="svai_1" value="950" checked></td>
+									<td><input type="radio" id="diametr76_1.5" name="svai_1" value="1050"></td>
+									<td><input type="radio" id="diametr89_1.5" name="svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="svai_1" value="1250"></td>
+								</tr>
+								<tr>
+									<th>76</th>
+									<td><input type="radio" id="diametr76_1.5" name="svai_1" value="1050"></td>
+									<td><input type="radio" id="diametr89_1.5" name="svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="svai_1" value="1250"></td>
+									<td><input type="radio" id="diametr108_2" name="svai_1" value="1350"></td>
+								</tr>
+								<tr>
+									<th>89</th>
+									<td><input type="radio" id="diametr89_1.5" name="svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="svai_1" value="1250"></td>
+									<td><input type="radio" id="diametr108_2" name="svai_1" value="1350"></td>
+									<td><input type="radio" id="diametr108_2.5" name="svai_1" value="1500"></td>
+								</tr>
+								<tr>
+									<th style="padding-right: 6px;">108</th>
+									<td><input type="radio" id="diametr108_1.5" name="svai_1" value="1250"></td>
+									<td><input type="radio" id="diametr108_2" name="svai_1" value="1350"></td>
+									<td><input type="radio" id="diametr108_2.5" name="svai_1" value="1500"></td>
+									<td><input type="radio" id="diametr108_3" name="svai_1" value="1650"></td>
+								</tr>
+							</table>							
+					</div>
+				
+					<div class="inputs-block-column">
+						<h6><b>Введите данные</b> (дополнительный для пристроек)</h6>
+						<div class="inputs-wrapper">
+							<input
+									type="number"
+									placeholder="Сваи Оголовки ЦПС"
+									id="dop-income-soc"
+									class="input"
+							>
+						</div>
+					</div>
+
+					<div class="radio-vibor">
+					<!--<h6>Введите данные</h6>-->	
+							<table>
+
+								<tr>
+									<td><sub style="font-size: 22px; font-weight: normal;">ø</sub>\<sup style="font-size: 15px; font-weight: normal;">M</sup></td>
+									<th>1.5</th>
+									<th>2</th>
+									<th>2.5</th>
+									<th>3</th>
+								</tr>
+								<tr>
+									<th>57</th>
+									<td><input type="radio" id="diametr57_1.5" name="dop-svai_1" value="950"></td>
+									<td><input type="radio" id="diametr76_1.5" name="dop-svai_1" value="1050"></td>
+									<td><input type="radio" id="diametr89_1.5" name="dop-svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="dop-svai_1" value="1250"></td>
+								</tr>
+								<tr>
+									<th>76</th>
+									<td><input type="radio" id="diametr76_1.5" name="dop-svai_1" value="1050"></td>
+									<td><input type="radio" id="diametr89_1.5" name="dop-svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="dop-svai_1" value="1250"></td>
+									<td><input type="radio" id="diametr108_2" name="dop-svai_1" value="1350"></td>
+								</tr>
+								<tr>
+									<th>89</th>
+									<td><input type="radio" id="diametr89_1.5" name="dop-svai_1" value="1150"></td>
+									<td><input type="radio" id="diametr108_1.5" name="dop-svai_1" value="1250"></td>
+									<td><input type="radio" id="diametr108_2" name="dop-svai_1" value="1350"></td>
+									<td><input type="radio" id="diametr108_2.5" name="dop-svai_1" value="1500"></td>
+								</tr>
+
+							</table>
+					</div>
+				</div>
+		</div>
+
+		<button type="submit">сброс</button>
+		<!-- <input type="reset"> -->
+
+			<div class="result-block">
+				<div class="total-numb">
+					<h6>Итого:</h6>
+					<!-- <input type="number" id="spend" value="0" readonly> -->
+					<span id="total-price">0 </span>
+							рублей
+				</div>
+			</div>
+			<div class="tel">
+			<p>
+				<b>Номер для связи: </b><a href="tel:+79317014793">8 (931) 701-47-93</a>
+			</p>
+			<p>
+				<b>Наша группа: </b><a href="https://vk.com/stroitelstvo_sorta" target="_blank">Строительство в Сортавала</a>
+			</p>
+			</div>
+		<div class="inputs-width">
+			<div class="total-info">
+				<h6>Данная сумма только за установку свай. Дорога сюда не входит, т.к. расстояние до объекта всегда разная (заказчик оплачивает только топливо).</h6>
+			</div>
+		</div><hr>
+		
+	<p>
+		<script src="./main.js"></script>
+	</p>
+	</form>
+	</section>
+
+
+
+
+
+	<summary><div class="inputs-width"><h4>Дополнительная информация</h4>
+		</summary>
+		<details>
+			<p>
+				<b>Швеллер 12</b> - применяют для винтовых свай 76 — 89 метра.<br>
+				<b>Швеллер 14</b> - применяют для винтовых свай 89 — 108 диаметра.<br>
+				<b>Швеллер 16</b> - применяют для винтовых свай 108 диаметра.<br>
+				<b>Швеллер 18</b> - применяют для винтовых свай 108 диаметра и 133 диаметра.<br>
+				<b>Швеллер 20</b> - применяют для винтовых  свай 108 диаметра и 133 диаметра.<br>
+				<i>(соответственно монтаж швеллера делают без оголовков)</i>
+			</p>
+			<p>
+				На свайно винтовой фундамент при необходимости устанавливаются раскосы. Монтаж раскос может быть, как на всём фундаменте, так и на любой его части - это зависит от расстояния верхней точки сваи до земли. В случае превышение фундамента или его части более 50 см. то необходим монтаж раскос. Монтаж раскос производится между сваями в стык уголка или проф трубы.
+			</p>
+
+
+			<p>
+		  			<!-- <p><input type="submit" id="btn" value="узнать"></p> -->
+			<a href="https://buildingclub.ru/montazh-vintovyh-svaj-trebovaniya-i-dopuski-po-normam" target="_blank">Коротко о допусках</a>
+		
+			</p>
+		
+		</div>
+	</details>
+	
+</body>
+</html>
